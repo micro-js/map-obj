@@ -1,0 +1,14 @@
+{
+  "name": "omap",
+  "description": "Object map utility",
+  "repository": "git://github.com/micro-js/omap.git",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "dependencies": {
+    "foreach": "github:micro-js/foreach"
+  },
+  "devDependencies": {
+    "mocha": "2.x"
+  }
+}
