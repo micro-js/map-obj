@@ -9,6 +9,6 @@
     "foreach": "github:micro-js/foreach"
   },
   "devDependencies": {
-    "mocha": "2.x"
+    "tape": "^4.2.0"
   }
 }

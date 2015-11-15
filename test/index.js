@@ -1,4 +1,26 @@
+/**
+ * Imports
+ */
 
-var assert = require('assert');
+var omap = require('..')
+var test = require('tape')
 
-describe('omap', function(){});
+/**
+ * Tests
+ */
+
+test('should work', function (t) {
+  var obj = {a: 1}
+
+  t.equal(omap(obj, add1).a, 2)
+  t.equal(obj.a, 1)
+  t.end()
+})
+
+/**
+ * Helpers
+ */
+
+function add1 (n) {
+  return n + 1
+}
