@@ -27,11 +27,10 @@ function addOne (v) {
 
 ## API
 
-### mapObj(fn, obj, ctx)
+### mapObj(fn, obj)
 
 - `fn` - map function
 - `obj` - obj to map over
-- `ctx` - context use for map call
 
 **Returns:** mapped object
 
