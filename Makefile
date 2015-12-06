@@ -1,7 +1,20 @@
+#
+# Vars
+#
+
+BIN = ./node_modules/.bin
+
+#
+# Tasks
+#
+
 node_modules: package.json
 	@npm install
 
 test: node_modules
-	@./node_modules/.bin/tape test/*
+	@${BIN}/tape test/*
 
-.PHONY: test
+validate: node_modules
+	@${BIN}/standard
+
+.PHONY: test validate release

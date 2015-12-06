@@ -2,25 +2,20 @@
  * Imports
  */
 
-var omap = require('..')
+var mapObj = require('..')
 var test = require('tape')
 
 /**
  * Tests
  */
 
-test('should work', function (t) {
-  var obj = {a: 1}
+test('should map', function (t) {
+  var obj = {a: 1, b: 2}
 
-  t.equal(omap(obj, add1).a, 2)
-  t.equal(obj.a, 1)
+  t.deepEqual(mapObj(addOne, obj), {a: 2, b: 3})
   t.end()
 })
 
-/**
- * Helpers
- */
-
-function add1 (n) {
-  return n + 1
+function addOne(v) {
+  return v + 1
 }
