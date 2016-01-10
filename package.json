@@ -8,11 +8,8 @@
   "scripts": {
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
-  "dependencies": {
-    "@micro-js/foreach": "^1.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "tape": "^4.2.2",
-    "standard": "^5.4.1"
+    "tape": "^4.2.2"
   }
 }
